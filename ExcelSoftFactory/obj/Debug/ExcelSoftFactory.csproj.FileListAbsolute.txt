@@ -1,0 +1,5 @@
+F:\Product Development\ExcelSoft\ExcelSoftFactory\bin\Debug\ExcelSoftFactory.dll
+F:\Product Development\ExcelSoft\ExcelSoftFactory\bin\Debug\ExcelSoftFactory.pdb
+F:\Product Development\ExcelSoft\ExcelSoftFactory\obj\Debug\ExcelSoftFactory.csprojResolveAssemblyReference.cache
+F:\Product Development\ExcelSoft\ExcelSoftFactory\obj\Debug\ExcelSoftFactory.dll
+F:\Product Development\ExcelSoft\ExcelSoftFactory\obj\Debug\ExcelSoftFactory.pdb

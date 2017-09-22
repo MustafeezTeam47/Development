@@ -1,0 +1,11 @@
+F:\Product Development\ExcelSoft\ExcelSoftBAL\bin\Release\ExcelSoftBAL.dll
+F:\Product Development\ExcelSoft\ExcelSoftBAL\bin\Release\ExcelSoftBAL.pdb
+F:\Product Development\ExcelSoft\ExcelSoftBAL\bin\Release\ApplicationUtility.dll
+F:\Product Development\ExcelSoft\ExcelSoftBAL\bin\Release\ExcelFactory.dll
+F:\Product Development\ExcelSoft\ExcelSoftBAL\bin\Release\ExcelSoftDAL.dll
+F:\Product Development\ExcelSoft\ExcelSoftBAL\bin\Release\ExcelSoftDAL.pdb
+F:\Product Development\ExcelSoft\ExcelSoftBAL\bin\Release\ApplicationUtility.pdb
+F:\Product Development\ExcelSoft\ExcelSoftBAL\bin\Release\ExcelFactory.pdb
+F:\Product Development\ExcelSoft\ExcelSoftBAL\obj\Release\ExcelSoftBAL.csprojResolveAssemblyReference.cache
+F:\Product Development\ExcelSoft\ExcelSoftBAL\obj\Release\ExcelSoftBAL.dll
+F:\Product Development\ExcelSoft\ExcelSoftBAL\obj\Release\ExcelSoftBAL.pdb

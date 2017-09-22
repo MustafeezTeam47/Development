@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{831D3EEF-F4BB-4934-9B3F-F56958B26206}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExcelSoft</RootNamespace>
+    <AssemblyName>ExcelSoft</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.Ribbon35, Version=3.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ExcelSoft POS\VersionV1.0.0.0.0\WinFormRibbion\WinFormRibbion\bin\Debug\System.Windows.Forms.Ribbon35.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\..\ExcelSoft POS\WinFormRibbion\DockPanel\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Roles.Designer.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Management\ExternalTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Management\ExternalTransfer.Designer.cs">
+      <DependentUpon>ExternalTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Management\StockAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Management\StockAdjustment.Designer.cs">
+      <DependentUpon>StockAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Management\StockOpening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Management\StockOpening.Designer.cs">
+      <DependentUpon>StockOpening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Management\StockReconcilition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Management\StockReconcilition.Designer.cs">
+      <DependentUpon>StockReconcilition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Management\TransferRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Management\TransferRequest.Designer.cs">
+      <DependentUpon>TransferRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item Management\Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item Management\Items.Designer.cs">
+      <DependentUpon>Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item Management\ItemStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item Management\ItemStock.Designer.cs">
+      <DependentUpon>ItemStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormMDI.Designer.cs">
+      <DependentUpon>MainFormMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetup\AddBatches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSetup\AddBatches.Designer.cs">
+      <DependentUpon>AddBatches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetup\Branch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSetup\Branch.Designer.cs">
+      <DependentUpon>Branch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetup\ProductCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSetup\ProductCategory.Designer.cs">
+      <DependentUpon>ProductCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetup\ProductGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSetup\ProductGroup.Designer.cs">
+      <DependentUpon>ProductGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetup\ProductMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSetup\ProductMaster.Designer.cs">
+      <DependentUpon>ProductMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase Management\Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Management\Purchase.Designer.cs">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Management\PurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Management\PurchaseOrder.Designer.cs">
+      <DependentUpon>PurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Management\PurchaseRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Management\PurchaseRequest.Designer.cs">
+      <DependentUpon>PurchaseRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Management\PurchaseReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Management\PurchaseReturn.Designer.cs">
+      <DependentUpon>PurchaseReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Management\VendorPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Management\VendorPayment.Designer.cs">
+      <DependentUpon>VendorPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Management\Vendors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Management\Vendors.Designer.cs">
+      <DependentUpon>Vendors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales Management\Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales Management\Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales Management\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales Management\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales Management\SalesOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales Management\SalesOrder.Designer.cs">
+      <DependentUpon>SalesOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales Management\SalesReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales Management\SalesReturn.Designer.cs">
+      <DependentUpon>SalesReturn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrator\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Management\StockAdjustment.resx">
+      <DependentUpon>StockAdjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Management\StockOpening.resx">
+      <DependentUpon>StockOpening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item Management\Items.resx">
+      <DependentUpon>Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormMDI.resx">
+      <DependentUpon>MainFormMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSetup\Branch.resx">
+      <DependentUpon>Branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSetup\ProductCategory.resx">
+      <DependentUpon>ProductCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSetup\ProductGroup.resx">
+      <DependentUpon>ProductGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSetup\ProductMaster.resx">
+      <DependentUpon>ProductMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Purchase Management\Purchase.resx">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Management\PurchaseOrder.resx">
+      <DependentUpon>PurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Management\PurchaseRequest.resx">
+      <DependentUpon>PurchaseRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Management\PurchaseReturn.resx">
+      <DependentUpon>PurchaseReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Management\VendorPayment.resx">
+      <DependentUpon>VendorPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Management\Vendors.resx">
+      <DependentUpon>Vendors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales Management\Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales Management\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales Management\SalesOrder.resx">
+      <DependentUpon>SalesOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales Management\SalesReturn.resx">
+      <DependentUpon>SalesReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_Login_73221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Masters\" />
+    <Folder Include="PopUpForms\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Themes\" />
+    <Folder Include="Transactions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_Configuration-2-01_1976057.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_ic_business_48px_352252.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_Users_Group_22172.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_BT_yuan_905626.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_ic_add_shopping_cart_48px_352007.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_sections_216718.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_electronic_billing_machine_44639.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_Myspace_1063061.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationUtility\ApplicationUtility.csproj">
+      <Project>{37d26f7c-3fd8-44e6-b765-a6ae9cf3e9ff}</Project>
+      <Name>ApplicationUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExcelSoftBAL\ExcelSoftBAL.csproj">
+      <Project>{f0025837-f5c7-4322-96d5-67c91272fcff}</Project>
+      <Name>ExcelSoftBAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_AccountingAuditor_30_2175889.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2075802-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\form-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_money_magnet_2103636.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\master.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Requisitioner-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\return_purchase1600.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sales-icon-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\users-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Vendor-Icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_1_1250327.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_adept_installer_7039.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_cloth__discount__sale__online__shopping__sales__ecommerce_2527976.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_customers_54199.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_multimedia-07_809488.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_presentation-arrow_1291762.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_purchase_order_67225.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\if_stock_task-assigned_24331.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\stock_market.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

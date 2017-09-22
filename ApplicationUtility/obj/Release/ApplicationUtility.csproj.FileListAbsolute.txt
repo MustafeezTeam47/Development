@@ -1,0 +1,5 @@
+F:\Product Development\ExcelSoft\ApplicationUtility\bin\Release\ApplicationUtility.dll
+F:\Product Development\ExcelSoft\ApplicationUtility\bin\Release\ApplicationUtility.pdb
+F:\Product Development\ExcelSoft\ApplicationUtility\obj\Release\ApplicationUtility.csprojResolveAssemblyReference.cache
+F:\Product Development\ExcelSoft\ApplicationUtility\obj\Release\ApplicationUtility.dll
+F:\Product Development\ExcelSoft\ApplicationUtility\obj\Release\ApplicationUtility.pdb
